@@ -8,7 +8,7 @@ import ExpressResponse from "../interfaces/express.response";
 import ErrorResponseHelper from "../helpers/error.response.helper";
 import RouterLogger from "../helpers/router.logger";
 
-//This lib connect to hasura grphql and reads and rights data to database
+//This lib connect to hasura grphql and reads and write data to database
 //Passing headers to get admin access
 //if hasura fails to exec given cmd it logs the error in errorlogger class instance
 export default class Graphql {
