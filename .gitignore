@@ -3,7 +3,8 @@
 /.idea/
 /package-lock.json
 /.env
-/storage/
+!/storage/.gitignore
+/storage/logs/
 /yarn-error.log
 /keys/private.key
 /keys/public.key
