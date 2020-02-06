@@ -1,6 +1,6 @@
 import ServerConfig from "./src/configs/server.config";
-import PublicIndexRouter from "./src/routes/public";
 import RouterLogger from "./src/helpers/router.logger";
+import MainIndexRouter from "./src/routes";
 
 //Loads express, auth, crypt
 //After that create a routes
@@ -10,7 +10,7 @@ import RouterLogger from "./src/helpers/router.logger";
 ServerConfig.getExpress().then(({server, app}) => {
 
     //All Routes Goes Here
-    new PublicIndexRouter(app);
+    new MainIndexRouter(app);
 
     app.use(RouterLogger.logErrors);
 
